@@ -3,7 +3,7 @@ import Zdog from "zzz";
 
 const illo = new Zdog.Illustration({
     element: ".zdog",
-    resize: true, // canvas responsive
+    resize: true,
 });
 
 new Zdog.Hemisphere({
@@ -16,7 +16,7 @@ new Zdog.Hemisphere({
 
 function animate() {
     illo.rotate.y += 0.03;
-    illo.updateRenderGraph(); // 👈 Dessine dans le canvas
+    illo.updateRenderGraph();
     requestAnimationFrame(animate);
 }
 animate();
